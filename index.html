@@ -72,27 +72,6 @@
         }
     }
     </script>
-    <script>
-        var Component = require("montage/ui/component").Component;
-
-        exports.Owner = Component.specialize({
-            templateDidLoad: {
-                value: function() {
-                    var categories = this.templateObjects.categories;
-
-                    categories.content = [
-                        {"category": "Turtles"},
-                        {"category": "Cats"},
-                        {"category": "Dogs"},
-                        {"category": "Horses"},
-                        {"category": "Squirrels"},
-                        {"category": "Birds"}
-                    ];
-                }
-            }
-        });
-console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-        </script>
 </head>
 <body>
     <div data-montage-id="owner">
@@ -103,5 +82,25 @@ console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
             <li data-montage-id="category" class="mfiddle-Owner-category"></li>
         </ul>
     </div>
+        <script>
+            var Component = require("montage/ui/component").Component;
+
+            exports.Owner = Component.specialize({
+                templateDidLoad: {
+                    value: function() {
+                        var categories = this.templateObjects.categories;
+                        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+                        categories.content = [
+                            {"category": "Turtles"},
+                            {"category": "Cats"},
+                            {"category": "Dogs"},
+                            {"category": "Horses"},
+                            {"category": "Squirrels"},
+                            {"category": "Birds"}
+                        ];
+                    }
+                }
+            });
+    </script>
 </body>
 </html>
