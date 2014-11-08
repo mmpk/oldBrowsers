@@ -46,7 +46,7 @@
         "owner": {
             "prototype":"montage/ui/loader.reel",
             "properties": {
-                "element": {"#": "component"}
+                "element": {"#": "owner"}
             }
         },
         "categories": {
@@ -90,7 +90,9 @@
         </script>
 </head>
 <body>
-    <span class="loading"></span>
+    <div data-montage-id="owner">
+        <span class="loading"></span>
+    </div>
     <div data-montage-id="component">
         <ul data-montage-id="categories" class="mfiddle-Owner-categories">
             <li data-montage-id="category" class="mfiddle-Owner-category"></li>
