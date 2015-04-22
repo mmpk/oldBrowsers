@@ -16,8 +16,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     handleButtonAction: {
         value: function() {
+            var c = 0;
             var rep = this.templateObjects.repetition; 
-            console.log("action!" + rep.content[1]);
+            rep.content.add(c);
+            c++;
             
         }
     }
