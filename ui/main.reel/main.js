@@ -4,6 +4,8 @@
  */
 var Component = require("montage/ui/component").Component;
 
+var c = 0;
+
 /**
  * @class Main
  * @extends Component
@@ -16,7 +18,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     handleButtonAction: {
         value: function() {
-            var c = 0;
             var rep = this.templateObjects.repetition; 
             rep.content.add(c);
             c++;
