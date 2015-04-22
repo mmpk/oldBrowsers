@@ -2,7 +2,7 @@
     "name": "oldbrowsers",
     "version": "0.1.0",
     "dependencies": {
-        "montage": "~0.14.0",
+        "montage": "0.15.0",
         "digit": "~0.5.0"
     },
     "devDependencies": {
@@ -12,5 +12,7 @@
         "run-tests.html",
         "test"
     ],
-    "bundle": [ "ui/main.reel" ]
+    "bundle": [
+        "ui/main.reel"
+    ]
 }
