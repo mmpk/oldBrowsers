@@ -13,5 +13,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
-    }
+    },
+        AddItem: {
+            value: function() {
+                console.log("action!");
+            }
+        }
 });
