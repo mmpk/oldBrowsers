@@ -14,9 +14,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
-        AddItem: {
-            value: function() {
-                console.log("action!");
-            }
+    handleButtonAction: {
+        value: function() {
+            console.log("action!");
         }
+    }
 });
