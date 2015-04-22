@@ -21,25 +21,25 @@
                 "label": "Button"
             }
         },
-        "checkbox": {
-            "prototype": "digit/ui/checkbox.reel",
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "checkbox"},
-                "checked": true
+                "element": {"#": "repetition"},
+                "content": [
+                    "A",
+                    "B",
+                    "C"
+                ]
             }
         },
-        "number": {
-            "prototype": "digit/ui/number-field.reel",
+        "text": {
+            "prototype": "digit/ui/text.reel",
             "properties": {
-                "element": {"#": "number"},
-                "value": 100
-            }
-        },
-        "textArea": {
-            "prototype": "digit/ui/text-area.reel",
-            "properties": {
-                "element": {"#": "textArea"},
+                "element": {"#": "text"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object"}
             }
         }
     }
@@ -48,9 +48,9 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
-        <input type="checkbox" data-montage-id="checkbox">
-        <input type="number" data-montage-id="number">
-        <textarea data-montage-id="textArea"></textarea>
+        <ul data-montage-id="repetition">
+          HELLO => <p data-montage-id="text"></p>
+        </ul>
     </div>
 </body>
 </html>
