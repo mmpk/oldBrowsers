@@ -16,7 +16,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     handleButtonAction: {
         value: function() {
-            console.log("action!");
+            var rep = this.templateObjects.repetition; 
+            console.log("action!" + rep.content[1]);
+            
         }
     }
 });
