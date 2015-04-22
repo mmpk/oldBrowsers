@@ -28,7 +28,10 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "prototype": "montage/ui/loader.reel"
+            "prototype": "montage/ui/loader.reel",
+            "properties": {
+                "element": {"#": "main"}
+            }
         }
     }
     </script>
@@ -71,6 +74,6 @@
             </header>
         </div>
             
-    <span class="loading"></span>
+    <div data-montage-id="main" data-montage-skin="light" class="Main"> </div>
 </body>
 </html>
